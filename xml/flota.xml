@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE flota [
+
+   <!ENTITY % elementos_coche SYSTEM "tipo_coche.dtd">
+   %elementos_coche;
+   
+   <!ENTITY % elementos_persona SYSTEM "tipo_persona.dtd">
+   %elementos_persona;
+
+   <!ELEMENT flota (personas, coches)>
+   <!ELEMENT personas (persona*)>
+   <!ELEMENT coches (coche*)>
+
+]>
+
+<flota>
+   <personas>
+      <persona>
+         <nombre>Iker</nombre>
+         <mayor_de_edad/>
+         <ciudad>Pamplona</ciudad>
+      </persona>
+   </personas>
+   <coches>
+      <coche>
+         <marca>opel</marca>
+         <modelo>corsa</modelo>
+         <año_compra>1990</año_compra>
+      </coche>
+   </coches>
+</flota>

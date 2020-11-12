@@ -1,0 +1,4 @@
+<!ELEMENT coche (marca, modelo, año_compra)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT año_compra (#PCDATA)>
